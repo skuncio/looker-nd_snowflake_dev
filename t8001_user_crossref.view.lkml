@@ -28,14 +28,7 @@ view: t8001_user_crossref {
 
   dimension_group: c8001_create {
     type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
+    timeframes: [date, week, month]
     convert_tz: no
     sql: ${TABLE}.C8001_CREATE_DATE ;;
   }
@@ -67,16 +60,8 @@ view: t8001_user_crossref {
 
   dimension_group: c8001_last_activity {
     type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
+    timeframes: [date, week, month]
     convert_tz: no
-    datatype: date
     sql: ${TABLE}.C8001_LAST_ACTIVITY_DATE ;;
   }
 

@@ -104,12 +104,12 @@ view: t8002_contentview {
   dimension_group: c8002_datetime {
     type: time
     timeframes: [
-      raw,
+      time,
       date,
       week,
       month,
-      quarter,
-      year
+      year,
+      hour_of_day
     ]
     convert_tz: no
     sql: ${TABLE}.C8002_DATETIME ;;
