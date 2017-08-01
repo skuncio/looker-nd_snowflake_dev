@@ -37,7 +37,6 @@ view: t8001_user_crossref {
       year
     ]
     convert_tz: no
-    datatype: date
     sql: ${TABLE}.C8001_CREATE_DATE ;;
   }
 

@@ -112,7 +112,6 @@ view: t8002_contentview {
       year
     ]
     convert_tz: no
-    datatype: date
     sql: ${TABLE}.C8002_DATETIME ;;
   }
 
