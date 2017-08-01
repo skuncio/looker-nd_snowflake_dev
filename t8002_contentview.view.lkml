@@ -101,8 +101,18 @@ view: t8002_contentview {
     sql: ${TABLE}.C8002_COUNTY ;;
   }
 
-  dimension: c8002_datetime {
-    type: string
+  dimension_group: c8002_datetime {
+    type: time
+    timeframes: [
+      raw,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    convert_tz: no
+    datatype: date
     sql: ${TABLE}.C8002_DATETIME ;;
   }
 
