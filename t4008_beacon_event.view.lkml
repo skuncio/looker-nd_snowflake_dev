@@ -16,10 +16,11 @@ view: t4008_beacon_event {
     sql: ${TABLE}.C4008_BATTERY ;;
   }
 
-#   dimension: c4008_bcat {
-#     type: string
-#     sql: ${TABLE}.C4008_BCAT ;;
-#   }
+   dimension: c4008_bcat {
+#    hidden: yes
+     type: string
+     sql: ${TABLE}.C4008_BCAT::string ;;
+   }
 
   dimension: BCAT_BP001 {
     view_label: "Beacon Category"
