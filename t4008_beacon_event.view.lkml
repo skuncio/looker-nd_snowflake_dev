@@ -26,7 +26,7 @@ view: t4008_beacon_event {
     view_label: "Beacon Category"
     label: "1.餐飲"
     type: string
-    sql: ${TABLE}.c4008_bcat:BP001 ;;
+    sql: ${TABLE}.c4008_bcat:BP001::string ;;
   }
 
   dimension: BCAT_BP002 {
