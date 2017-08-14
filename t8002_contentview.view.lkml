@@ -122,6 +122,7 @@ view: t8002_contentview {
 
   dimension: date_viewed {
     group_label: "c8002_datetime"
+    type: date
     sql: TO_DATE(${TABLE}.c8050_datetime) ;;
   }
 
