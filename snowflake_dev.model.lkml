@@ -60,6 +60,8 @@ explore: t8002_contentview_curr_day {}
 
 # - explore: t8002_contentview_us_can
 
+explore: t8003_user_product  {}
+
 # - explore: t8014_user_campaign
 
 # - explore: t8014_user_campaign_bak
