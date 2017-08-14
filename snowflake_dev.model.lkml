@@ -88,6 +88,6 @@ explore: t8003_user_product  {}
 
 # - explore: t8026_user_age_prediction
 
-# - explore: t8050_user_content_by_day
+explore: t8050_user_content_by_day {}
 
 # - explore: test
