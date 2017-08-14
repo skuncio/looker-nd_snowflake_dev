@@ -56,6 +56,11 @@ view: t8050_user_content_by_day {
     sql: ${TABLE}.C8050_DATETIME ;;
   }
 
+  dimension: date_viewed {
+    group_label: "view"
+    sql: ${TABLE}.c8050_datetime ;;
+  }
+
   dimension: c8050_news {
     type: string
     sql: ${TABLE}.C8050_NEWS ;;
