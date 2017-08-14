@@ -115,9 +115,14 @@ view: t8002_contentview {
     sql: ${TABLE}.C8002_DATETIME ;;
   }
 
+  filter: filter_view_date {
+    label: "view date"
+    type: date
+  }
+
   dimension: date_viewed {
-    group_label: "view"
-    sql: ${TABLE}.c8050_datetime ;;
+    group_label: "c8002_datetime"
+    sql: TO_DATE(${TABLE}.c8050_datetime) ;;
   }
 
   dimension: c8002_dcc_id {
