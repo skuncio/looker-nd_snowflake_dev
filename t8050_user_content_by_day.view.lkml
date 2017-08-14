@@ -58,7 +58,7 @@ view: t8050_user_content_by_day {
 
   dimension: date_viewed {
     group_label: "c8050_datetime"
-    sql: ${TABLE}.c8050_datetime ;;
+    sql: TO_DATE(${TABLE}.c8050_datetime) ;;
   }
 
   dimension: c8050_news {
