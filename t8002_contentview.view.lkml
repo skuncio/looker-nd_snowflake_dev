@@ -102,6 +102,7 @@ view: t8002_contentview {
   }
 
   dimension_group: c8002_datetime {
+    group_label: "c8002_datetime"
     type: time
     timeframes: [
       time,
@@ -115,14 +116,14 @@ view: t8002_contentview {
     sql: ${TABLE}.C8002_DATETIME ;;
   }
 
+  dimension: c8002_datetime_date_d {
+    group_label: "c8002_datetime"
+    sql: TO_DATE(${TABLE}.c8002_datetime) ;;
+  }
+
   filter: filter_date_viewed {
     label: "date_viewed"
     type: date
-  }
-
-  dimension: date_viewed {
-    group_label: "c8002_datetime"
-    sql: TO_DATE(${TABLE}.c8002_datetime) ;;
   }
 
   dimension: c8002_dcc_id {
