@@ -1,4 +1,4 @@
-view: t4008_beacon_event {
+view: t4008_beacon_event_dev {
   sql_table_name: PUBLIC.T4008_BEACON_EVENT ;;
 
   dimension: c4008_adid {

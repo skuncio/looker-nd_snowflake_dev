@@ -26,7 +26,7 @@ explore: t4005_etw_event {}
 
 # - explore: t4007_dashboard_yesterday
 
-explore: t4008_beacon_event {}
+explore: t4008_beacon_event_dev {}
 
 # - explore: t5000_open
 
