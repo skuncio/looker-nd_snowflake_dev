@@ -1,4 +1,4 @@
-view: t8001_user_crossref {
+view: t8001_user_crossref_HOLD {
   sql_table_name: PUBLIC.T8001_USER_CROSSREF ;;
 
   dimension: c8001_activity_count {
@@ -28,27 +28,14 @@ view: t8001_user_crossref {
 
   dimension_group: c8001_create {
     type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
+    timeframes: [date, week, month]
     convert_tz: no
-    datatype: date
     sql: ${TABLE}.C8001_CREATE_DATE ;;
   }
 
   dimension: c8001_did {
     type: string
     sql: ${TABLE}.C8001_DID ;;
-  }
-
-  dimension: c8001_fbid {
-    type: string
-    sql: ${TABLE}.C8001_FBID ;;
   }
 
   dimension: c8001_gaid {
@@ -73,16 +60,8 @@ view: t8001_user_crossref {
 
   dimension_group: c8001_last_activity {
     type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
+    timeframes: [date, week, month]
     convert_tz: no
-    datatype: date
     sql: ${TABLE}.C8001_LAST_ACTIVITY_DATE ;;
   }
 
@@ -104,11 +83,6 @@ view: t8001_user_crossref {
   dimension: c8001_nxtu_or_did {
     type: string
     sql: ${TABLE}.C8001_NXTU_OR_DID ;;
-  }
-
-  dimension: c8001_omo_accid {
-    type: string
-    sql: ${TABLE}.C8001_OMO_ACCID ;;
   }
 
   dimension_group: c8001_update {
