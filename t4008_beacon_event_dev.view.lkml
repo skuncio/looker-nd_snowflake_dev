@@ -6,6 +6,13 @@ view: t4008_beacon_event_dev {
     sql: ${TABLE}.C4008_ADID ;;
   }
 
+
+  dimension: c4008_adtype {
+    type: string
+    sql: ${TABLE}.C4008_ADTYPE ;;
+  }
+
+
 #   dimension: c4008_area {
 #     type: string
 #     sql: ${TABLE}.C4008_AREA ;;
@@ -124,6 +131,11 @@ view: t4008_beacon_event_dev {
 #     sql: ${TABLE}.C4008_CUISINE ;;
 #   }
 
+  dimension: c4008_cuisinetype {
+    type: string
+    sql: ${TABLE}.C4008_CUISINETYPE ;;
+  }
+
   dimension: c4008_did {
     type: string
     sql: ${TABLE}.C4008_DID ;;
@@ -164,6 +176,11 @@ view: t4008_beacon_event_dev {
     sql: ${TABLE}.C4008_EDATE ;;
   }
 
+  dimension: c4008_edt {
+    type: number
+    sql: ${TABLE}.C4008_EDT ;;
+  }
+
   dimension: c4008_elabel {
     type: string
     sql: ${TABLE}.C4008_ELABEL ;;
@@ -194,6 +211,12 @@ view: t4008_beacon_event_dev {
 #     sql: ${TABLE}.C4008_EVAL4 ;;
 #   }
 #
+
+  dimension: c4008_foodgroup {
+    type: string
+    sql: ${TABLE}.C4008_FOODGROUP ;;
+  }
+
 #   dimension: c4008_foodtype {
 #     type: string
 #     sql: ${TABLE}.C4008_FOODTYPE ;;
@@ -234,6 +257,11 @@ view: t4008_beacon_event_dev {
     type: location
     sql_latitude: ${c4008_lat} ;;
     sql_longitude: ${c4008_lon} ;;
+  }
+
+  dimension: c4008_mode {
+    type: string
+    sql: ${TABLE}.C4008_MODE ;;
   }
 
   dimension: c4008_nxtu {
@@ -300,6 +328,16 @@ view: t4008_beacon_event_dev {
 #     type: string
 #     sql: ${TABLE}.C4008_SPENDING ;;
 #   }
+
+  dimension: c4008_std {
+    type: number
+    sql: ${TABLE}.C4008_STD ;;
+  }
+
+  dimension: c4008_stm {
+    type: string
+    sql: ${TABLE}.C4008_STM ;;
+  }
 
   dimension: c4008_sz {
     type: string
