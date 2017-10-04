@@ -334,9 +334,34 @@ view: t4008_beacon_event_dev {
     sql: ${TABLE}.C4008_STD ;;
   }
 
-  dimension: c4008_stm {
-    type: string
+  dimension_group: c4008_stm {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year,
+      hour_of_day
+    ]
     sql: ${TABLE}.C4008_STM ;;
+  }
+
+  dimension_group: c4008_etm {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year,
+      hour_of_day
+    ]
+    sql: ${TABLE}.C4008_ETM ;;
   }
 
   dimension: c4008_sz {
