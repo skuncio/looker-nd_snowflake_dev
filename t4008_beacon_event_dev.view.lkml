@@ -162,7 +162,7 @@ view: t4008_beacon_event_dev {
   }
 
   dimension_group: c4008_edate {
-    group_label: "c4008_edate"
+    group_label: "C4008_Edate"
     type: time
     timeframes: [
       raw,
@@ -179,7 +179,7 @@ view: t4008_beacon_event_dev {
   }
 
   dimension: c4008_edate_date_d {
-    group_label: "c4008_edate"
+    group_label: "C4008_Edate"
     sql: TO_DATE(${TABLE}.c4008_edate) ;;
   }
 
