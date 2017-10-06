@@ -173,6 +173,7 @@ view: t4008_beacon_event_dev {
       year,
       hour_of_day
     ]
+    convert_tz: no
     sql: ${TABLE}.C4008_EDATE ;;
   }
 
@@ -346,6 +347,7 @@ view: t4008_beacon_event_dev {
       year,
       hour_of_day
     ]
+    convert_tz: no
     sql: ${TABLE}.C4008_STM ;;
   }
 
@@ -361,6 +363,7 @@ view: t4008_beacon_event_dev {
       year,
       hour_of_day
     ]
+    convert_tz: no
     sql: ${TABLE}.C4008_ETM ;;
   }
 
