@@ -45,7 +45,7 @@ view: t4008_beacon_event_dev {
 
   dimension: BCAT_BP003 {
     view_label: "Beacon Category"
-    label: "3. 消閒"
+    label: "03. 消閒"
     type: string
     sql: ${TABLE}.c4008_bcat:BP003 ;;
   }
@@ -59,7 +59,7 @@ view: t4008_beacon_event_dev {
 
   dimension: BCAT_BP005 {
     view_label: "Beacon Category"
-    label: "5. 美容"
+    label: "05. 美容"
     type: string
     sql: ${TABLE}.c4008_bcat:BP005 ;;
   }
@@ -162,6 +162,7 @@ view: t4008_beacon_event_dev {
   }
 
   dimension_group: c4008_edate {
+    group_label: "c4008_edate"
     type: time
     timeframes: [
       raw,
