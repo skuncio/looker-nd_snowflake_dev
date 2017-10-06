@@ -131,10 +131,10 @@ view: t4008_beacon_event_dev {
 #     sql: ${TABLE}.C4008_CUISINE ;;
 #   }
 
-  dimension: c4008_cuisinetype {
-    type: string
-    sql: ${TABLE}.C4008_CUISINETYPE ;;
-  }
+#   dimension: c4008_cuisinetype {
+#     type: string
+#     sql: ${TABLE}.C4008_CUISINETYPE ;;
+#   }
 
   dimension: c4008_did {
     type: string
@@ -218,10 +218,10 @@ view: t4008_beacon_event_dev {
 #   }
 #
 
-  dimension: c4008_foodgroup {
-    type: string
-    sql: ${TABLE}.C4008_FOODGROUP ;;
-  }
+#   dimension: c4008_foodgroup {
+#     type: string
+#     sql: ${TABLE}.C4008_FOODGROUP ;;
+#   }
 
 #   dimension: c4008_foodtype {
 #     type: string
