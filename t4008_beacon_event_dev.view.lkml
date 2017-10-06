@@ -177,6 +177,11 @@ view: t4008_beacon_event_dev {
     sql: ${TABLE}.C4008_EDATE ;;
   }
 
+  dimension: c4008_edate_date_d {
+    group_label: "c4008_edate"
+    sql: TO_DATE(${TABLE}.c4008_edate) ;;
+  }
+
   dimension: c4008_edt {
     type: number
     sql: ${TABLE}.C4008_EDT ;;
