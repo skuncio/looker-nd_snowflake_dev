@@ -31,14 +31,14 @@ view: t4008_beacon_event_dev {
 
   dimension: BCAT_BP001 {
     view_label: "Beacon Category"
-    label: "1.餐飲"
+    label: "01.餐飲"
     type: string
     sql: ${TABLE}.c4008_bcat:BP001::string ;;
   }
 
   dimension: BCAT_BP002 {
     view_label: "Beacon Category"
-    label: "2. 時裝"
+    label: "02. 時裝"
     type: string
     sql: ${TABLE}.c4008_bcat:BP002 ;;
   }
@@ -52,7 +52,7 @@ view: t4008_beacon_event_dev {
 
   dimension: BCAT_BP004 {
     view_label: "Beacon Category"
-    label: "4. 電子"
+    label: "04. 電子"
     type: string
     sql: ${TABLE}.c4008_bcat:BP004 ;;
   }
@@ -66,28 +66,28 @@ view: t4008_beacon_event_dev {
 
   dimension: BCAT_BP006 {
     view_label: "Beacon Category"
-    label: "6. 家居"
+    label: "06. 家居"
     type: string
     sql: ${TABLE}.c4008_bcat:BP006 ;;
   }
 
   dimension: BCAT_BP007 {
     view_label: "Beacon Category"
-    label: "7. 親子"
+    label: "07. 親子"
     type: string
     sql: ${TABLE}.c4008_bcat:BP007 ;;
   }
 
   dimension: BCAT_BP008 {
     view_label: "Beacon Category"
-    label: "8. 旅遊"
+    label: "08. 旅遊"
     type: string
     sql: ${TABLE}.c4008_bcat:BP008 ;;
   }
 
   dimension: BCAT_BP009 {
     view_label: "Beacon Category"
-    label: "9. 汽車"
+    label: "09. 汽車"
     type: string
     sql: ${TABLE}.c4008_bcat:BP009 ;;
   }
