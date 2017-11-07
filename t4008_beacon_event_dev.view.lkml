@@ -277,8 +277,18 @@ view: t4008_beacon_event_dev {
   dimension: c4008_mode {
     type: string
     sql: ${TABLE}.C4008_MODE ;;
-  }
+    case: {
+      when: {
+        sql: ${TABLE}.C4008_MODE = 'FG' or ${TABLE}.C4008_MODE is null or ${TABLE}.C4008_MODE='';;
+        label: "Foreground"
+      }
+      when: {
+        sql: ${TABLE}.C4008_MODE = 'BG';;
+        label: "Background"
+      }
+    }
 
+  }
   dimension: c4008_nxtu {
     type: string
     sql: ${TABLE}.C4008_NXTU ;;
