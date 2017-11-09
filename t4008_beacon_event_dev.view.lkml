@@ -419,6 +419,12 @@ view: t4008_beacon_event_dev {
     sql: ${c4008_adid} ;;
   }
 
+  measure: distinct_user_did {
+    type: count_distinct
+    value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
+    sql: ${c4008_did} ;;
+  }
+
   measure: distinct_beacon_region {
     type: count_distinct
     value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
