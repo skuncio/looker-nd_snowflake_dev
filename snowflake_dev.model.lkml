@@ -90,4 +90,6 @@ explore: t8003_user_product  {}
 
 explore: t8050_user_content_by_day {}
 
+explore: t8055_user_activty_by_day {}
+
 # - explore: test
