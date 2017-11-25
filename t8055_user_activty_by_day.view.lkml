@@ -37,11 +37,13 @@ view: t8055_user_activty_by_day {
   }
 
   dimension: c8055_total_page_views {
+    hidden: yes
     type: number
     sql: ${TABLE}.C8055_TOTAL_PAGE_VIEWS ;;
   }
 
   dimension: c8055_total_video_views {
+    hidden: yes
     type: number
     sql: ${TABLE}.C8055_TOTAL_VIDEO_VIEWS ;;
   }
@@ -51,11 +53,16 @@ view: t8055_user_activty_by_day {
     drill_fields: []
   }
 
+  measure: active_days {
+    type: count_distinct
+    sql: ${c8055_active_date} ;;
+  }
+
   measure: total_page_views {
     alias: [suml_page_views]
 #  hidden: yes
     type: sum
-    value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
+#    value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
     sql: ${c8055_total_page_views} ;;
   }
 
@@ -63,7 +70,7 @@ view: t8055_user_activty_by_day {
     alias: [sum_video_views]
 #  hidden: yes
     type: sum
-    value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
+#    value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
     sql: ${c8055_total_video_views} ;;
   }
   measure: distinct_users {
