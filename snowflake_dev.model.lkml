@@ -50,10 +50,12 @@ explore: t8001_user_crossref {}
 
 explore: t8002_contentview {
   label: "1) ContentView with ADTW double firing removed"
+  view_label: "1. All Content Views double firing removed"
 }
 
 explore: t3016_seg_agg_cid_day {
   label: "2) t3016_seg_agg_cid_day with ADTW double firing removed"
+  view_label: "1. t3016_seg_agg_cid_day double firing removed"
 }
 
 explore: t8002_contentview_curr_day {}
