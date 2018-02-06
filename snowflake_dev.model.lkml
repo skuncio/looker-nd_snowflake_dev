@@ -48,7 +48,13 @@ explore: t8001_user_crossref {}
 
 # - explore: t8001_user_crossref_template
 
-explore: t8002_contentview {}
+explore: t8002_contentview {
+  label: "1) ContentView with ADTW double firing removed"
+}
+
+explore: t3016_seg_agg_cid_day {
+  label: "2) t3016_seg_agg_cid_day with ADTW double firing removed"
+}
 
 explore: t8002_contentview_curr_day {}
 
